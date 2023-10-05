@@ -116,7 +116,7 @@
 
 .two-columns__brief {
   width: 175px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -126,6 +126,7 @@
 
 .two-columns__main-text {
   min-width: 784px;
+  width: 80%;
   /* background-color: blue; */
 }
 
