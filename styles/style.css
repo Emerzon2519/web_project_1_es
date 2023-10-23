@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
+  overflow: hidden;
   /* parameters for the header section */
 }
 
@@ -98,6 +99,17 @@
   right: 0;
   width: 568px;
   height: 568px;
+  transform: rotate(-15deg);
+  animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(15deg); /* Inicia la rotación desde 15 grados */
+  }
+  to {
+    transform: rotate(375deg); /* Gira 360 grados + 15 grados para completar 1 giro completo */
+  }
 }
 
 .description {
@@ -127,7 +139,6 @@
 .two-columns__main-text {
   min-width: 784px;
   width: 80%;
-  /* background-color: blue; */
 }
 
 .two-columns__paragraph {
@@ -250,6 +261,7 @@
 
 .kaufman {
   background-color: #1f1f1f;
+  margin-top: -250px;
   overflow: hidden;
   position: relative;
   padding-top: 90px;
@@ -274,10 +286,20 @@
 
 .kaufman__triangle {
   position: absolute;
-  top: 0;
+  top: 200px;
   right: -124px;
   width: 660px;
   height: 636px;
+  animation: Triangulo 20s linear infinite;
+}
+
+@keyframes Triangulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+}
 }
 
 .footer {
@@ -352,4 +374,157 @@ a {
   color: white;
 }
 
+.techniques {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-color: red; */
+}
 
+.cards {
+  margin: 0px auto 0px auto;
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  column-gap: 100px;
+}
+
+.cards__item {
+  width: 240px;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  border-radius: 100px;
+}
+
+
+.cards__title {
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.15;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cards__description {
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+
+.video__iframes {
+  padding-top: 50px;
+  display: flex;
+  width: 1050px;
+  column-gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+}
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote {
+  width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline {
+  margin-bottom: 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+}
+
+.khan__buy-link {
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+  padding-top: 80px;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+a {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
