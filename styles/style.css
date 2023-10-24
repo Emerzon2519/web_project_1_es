@@ -261,7 +261,7 @@
 
 .kaufman {
   background-color: #1f1f1f;
-  margin-top: -250px;
+  /* margin-top: -250px; */
   overflow: hidden;
   position: relative;
   padding-top: 90px;
@@ -377,7 +377,6 @@ a {
 .techniques {
   padding-top: 100px;
   padding-bottom: 100px;
-  /* background-color: red; */
 }
 
 .cards {
@@ -391,6 +390,8 @@ a {
 
 .cards__item {
   width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards__image {
@@ -407,6 +408,7 @@ a {
   line-height: 1.15;
   font-weight: bold;
   font-size: 24px;
+  height: 50px;
 }
 
 .cards__description {
@@ -424,7 +426,8 @@ a {
   column-gap: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -50px;
+  position: relative;
+  top:50px;
 }
 
 .video__iframe {
