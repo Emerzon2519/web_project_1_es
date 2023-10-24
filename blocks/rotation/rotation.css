@@ -1,0 +1,17 @@
+@keyframes rotation {
+  from {
+    transform: rotate(15deg); /* Inicia la rotación desde 15 grados */
+  }
+  to {
+    transform: rotate(375deg); /* Gira 360 grados + 15 grados para completar 1 giro completo */
+  }
+}
+
+@keyframes Triangulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+}
+}

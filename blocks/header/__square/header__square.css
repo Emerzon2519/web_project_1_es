@@ -9,11 +9,11 @@
   animation: rotation 20s linear infinite;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
   from {
-    transform: rotate(15deg); /* Inicia la rotación desde 15 grados */
+    transform: rotate(15deg);
   }
   to {
-    transform: rotate(375deg); /* Gira 360 grados + 15 grados para completar 1 giro completo */
+    transform: rotate(375deg);
   }
-}
+} */
